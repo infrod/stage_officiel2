@@ -83,14 +83,6 @@ const StageLogo = ({ size = 48 }) => (
     }}
   />
 );
-    {showText && (
-      <div>
-        <div style={{ fontFamily: "DM Mono, monospace", fontWeight: 900, fontSize: size * 0.38, color: dark ? "#fff" : "#1A3D7C", letterSpacing: 3, lineHeight: 1 }}>S.T.A.G.E.</div>
-        {size >= 36 && <div style={{ fontSize: size * 0.14, color: dark ? "rgba(255,255,255,0.5)" : "#6b7280", marginTop: 2, letterSpacing: 0.5 }}>Système de Transmission et d'Accompagnement</div>}
-      </div>
-    )}
-  </div>
-);
 
 // ─── DEMO DATA ────────────────────────────────────────────────────────────────
 // DOCS: cv et evaluations retirés → seulement protocole, journal, appreciation, rapport
