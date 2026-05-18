@@ -74,7 +74,7 @@ const Grid = ({ cols = 2, children, gap = 16 }) => {
 
 const StageLogo = ({ size = 48 }) => (
   <img
-    src="/logo.png"
+    src="/logo.png?v=2"
     alt="S.T.A.G.E."
     style={{
       height: size,
