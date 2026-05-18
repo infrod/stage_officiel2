@@ -73,17 +73,19 @@ const Grid = ({ cols = 2, children, gap = 16 }) => {
 
 
 const StageLogo = ({ size = 48 }) => (
-  <img
-    src="/stage-logo.png"
-    alt="S.T.A.G.E."
-    style={{
-      height: size,
-      width: "auto",
-      maxWidth: 180,
-      objectFit: "contain",
-      display: "block"
-    }}
-  />
+  <div style={{ background: "#fff", padding: 6, borderRadius: 8 }}>
+    <img
+      src="/stage-logo.png"
+      alt="S.T.A.G.E."
+      style={{
+        height: size,
+        width: "auto",
+        maxWidth: 180,
+        objectFit: "contain",
+        display: "block"
+      }}
+    />
+  </div>
 );
 
 // ─── DEMO DATA ────────────────────────────────────────────────────────────────
