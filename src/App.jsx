@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import logo from "./assets/stage-logo.png";
 
 // ─── GOOGLE FONTS ─────────────────────────────────────────────────────────────
 const FontLoader = () => {
@@ -73,19 +74,16 @@ const Grid = ({ cols = 2, children, gap = 16 }) => {
 
 
 const StageLogo = ({ size = 48 }) => (
-  <div style={{ background: "#fff", padding: 6, borderRadius: 8 }}>
-    <img
-      src="/stage-logo.png"
-      alt="S.T.A.G.E."
-      style={{
-        height: size,
-        width: "auto",
-        maxWidth: 180,
-        objectFit: "contain",
-        display: "block"
-      }}
-    />
-  </div>
+  <img
+    src={logo}
+    alt="S.T.A.G.E."
+    style={{
+      height: size,
+      width: "auto",
+      objectFit: "contain",
+      display: "block"
+    }}
+  />
 );
 
 // ─── DEMO DATA ────────────────────────────────────────────────────────────────
