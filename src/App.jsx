@@ -72,21 +72,17 @@ const Grid = ({ cols = 2, children, gap = 16 }) => {
 };
 
 
-const StageLogo = ({ size = 48, showText = true, dark = false }) => (
-  <div style={{ display: "flex", alignItems: "center", gap: showText ? 10 : 0 }}>
-    <svg width={size} height={size} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-      {/* Outer circle arc — teal/green top */}
-      <path d="M 100 10 A 90 90 0 1 1 99.9 10" fill="none" stroke="#5FAD9B" strokeWidth="14" strokeLinecap="round"
-        strokeDasharray="480 570" strokeDashoffset="-50" />
-      {/* Mountain left — green */}
-      <polygon points="55,145 100,70 145,145" fill="#5FAD9B" />
-      {/* Mountain right — dark blue, overlapping */}
-      <polygon points="90,145 135,75 180,145" fill="#1A3D7C" />
-      {/* Water / wave base — amber */}
-      <ellipse cx="100" cy="152" rx="72" ry="18" fill="#E8A020" />
-      {/* Wave overlay — white-ish to create wave effect */}
-      <path d="M 28 148 Q 64 138 100 148 Q 136 158 172 148 L 172 168 Q 136 178 100 168 Q 64 158 28 168 Z" fill="#1A3D7C" opacity="0.25" />
-    </svg>
+const StageLogo = ({ size = 48 }) => (
+  <img
+    src="/logo.png"
+    alt="S.T.A.G.E."
+    style={{
+      height: size,
+      width: "auto",
+      objectFit: "contain"
+    }}
+  />
+);
     {showText && (
       <div>
         <div style={{ fontFamily: "DM Mono, monospace", fontWeight: 900, fontSize: size * 0.38, color: dark ? "#fff" : "#1A3D7C", letterSpacing: 3, lineHeight: 1 }}>S.T.A.G.E.</div>
